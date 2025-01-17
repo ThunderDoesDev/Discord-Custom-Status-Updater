@@ -17,14 +17,14 @@ This is a Node.js script that automates the rotation of custom statuses on Disco
 1. Clone this repository or download the script.
 2. Install the required dependencies:
    ```bash
-   npm install axios
+   npm install axios fs readline
    ```
 3. Ensure you have your Discord token ready.
 
 ## Usage
 1. Run the script:
    ```bash
-   node status_updater_with_logging.js
+   node custom_status.js
    ```
 2. If prompted, enter your Discord token. The token will be saved in `discord_token.txt` for future use.
 3. Monitor the console for status updates. Informational logs and errors are saved to the respective log files:
