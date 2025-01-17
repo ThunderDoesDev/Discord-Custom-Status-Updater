@@ -24,7 +24,7 @@ This is a Node.js script that automates the rotation of custom statuses on Disco
 ## Usage
 1. Run the script:
    ```bash
-   node custom_status.js
+   node updater.js
    ```
 2. If prompted, enter your Discord token. The token will be saved in `discord_token.txt` for future use.
 3. Monitor the console for status updates. Informational logs and errors are saved to the respective log files:
@@ -41,9 +41,9 @@ You can modify the script to customize the following:
 - **Statuses**: Edit the `statuses` array in the script to include your desired custom statuses.
   ```javascript
   const statuses = [
-      "Surviving in the wilderness",
-      "Looking for hope",
-      "Helping the village"
+      "YOUR STATUS HERE",
+      "YOUR STATUS HERE",
+      "YOUR STATUS HERE"
   ];
   ```
 - **Rotation Interval**: Change the `timeout` variable to set how often the statuses rotate (in milliseconds).
@@ -55,15 +55,15 @@ You can modify the script to customize the following:
 ### Console:
 ```plaintext
 [2025-01-17T06:00:00.100Z] [INFO] Starting status updater...
-[2025-01-17T06:00:10.200Z] [SUCCESS] Successfully updated status to: "Surviving in the wilderness"
-[2025-01-17T06:00:20.300Z] [SUCCESS] Successfully updated status to: "Looking for hope"
+[2025-01-17T06:00:10.200Z] [SUCCESS] Successfully updated status to: "YOUR STATUS HERE"
+[2025-01-17T06:00:20.300Z] [SUCCESS] Successfully updated status to: "YOUR STATUS HERE"
 ```
 
 ### `status_update_log.txt`:
 ```plaintext
 [2025-01-17T06:00:00.100Z] [INFO] Starting status updater...
-[2025-01-17T06:00:10.200Z] [SUCCESS] Successfully updated status to: "Surviving in the wilderness"
-[2025-01-17T06:00:20.300Z] [SUCCESS] Successfully updated status to: "Looking for hope"
+[2025-01-17T06:00:10.200Z] [SUCCESS] Successfully updated status to: "YOUR STATUS HERE"
+[2025-01-17T06:00:20.300Z] [SUCCESS] Successfully updated status to: "YOUR STATUS HERE"
 ```
 
 ### `error_logs.txt`:
