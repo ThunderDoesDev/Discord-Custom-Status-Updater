@@ -72,7 +72,8 @@ You can modify the script to customize the following:
 ```
 
 ## Notes
-- **Discord Terms of Service**: Ensure you comply with Discord's ToS when using this script.
+- **Selfbots are against Discord’s Terms of Service**. Use this tool responsibly and be aware of the potential consequences, such as your account being banned.
+- This script uses **direct API calls** in selfbot mode, meaning it logs in as a user account rather than a bot account.
 - **Unauthorized Errors (401)**: Double-check your token if you encounter `401 Unauthorized` errors. You may need to regenerate it from your Discord account.
 
 ## Support
