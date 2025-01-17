@@ -75,9 +75,10 @@ You can modify the script to customize the following:
 - **Discord Terms of Service**: Ensure you comply with Discord's ToS when using this script.
 - **Unauthorized Errors (401)**: Double-check your token if you encounter `401 Unauthorized` errors. You may need to regenerate it from your Discord account.
 
+## Support
+For support, issues, or enhancements, please open an issue in this repository or join our discord support server.
+
+[Join Support Server](https://discord.gg/thunderdoesdev)
+
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-Enjoy automating your Discord custom statuses!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
