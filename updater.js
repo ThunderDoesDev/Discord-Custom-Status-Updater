@@ -2,11 +2,18 @@ const axios = require('axios');
 const fs = require('fs');
 const readline = require('readline');
 
-const statuses = [
+let statuses = [
     "YOUR STATUS HERE",
     "YOUR STATUS HERE",
     "YOUR STATUS HERE"
 ];
+
+function setStatuses(newStatuses) {
+    if (Array.isArray(newStatuses)) {
+        statuses = newStatuses;
+        index = 0;
+    }
+}
 const timeout = 10000;
 const tokenFile = 'discord_token.txt';
 const logFile = 'status_update_log.txt';
@@ -93,6 +100,10 @@ async function updateStatus() {
 }
 
 function startStatusUpdater() {
+    if (!Array.isArray(statuses) || statuses.length === 0) {
+        logError('No statuses defined. Please add at least one status to the statuses array.');
+        return;
+    }
     log('INFO', 'Starting status updater...');
     updateStatus();
 }
@@ -113,4 +124,17 @@ function main() {
     }
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+module.exports = {
+    startStatusUpdater,
+    updateStatus,
+    log,
+    logError,
+    promptForToken,
+    main,
+    setStatuses,
+    statuses
+};

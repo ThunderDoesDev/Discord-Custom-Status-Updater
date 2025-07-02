@@ -1,0 +1,17 @@
+{
+  "name": "discord-custom-status-updater",
+  "version": "1.0.0",
+  "description": "This is a Node.js script that automates the rotation of custom statuses on Discord. The script logs operational information to both the console and a text file while logging errors exclusively to a separate error log file.",
+  "main": "updater.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "axios": "^1.10.0",
+    "jest": "^30.0.3"
+  }
+}

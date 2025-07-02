@@ -1,0 +1,4 @@
+node_modules/
+error_logs.txt
+status_update_log.txt
+discord_token.txt
